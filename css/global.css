@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #00C900;
+    --gradient: linear-gradient(90deg, #00C900, #ADD600);
+    --gray-1: #C4C4CC;
+    --gray-2: #8D8D99;
+    --gray-3: #202024;
+    --gray-4: #121214;
+    --gray-5: #454545;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--gray-4);
+}
+
+main {
+    padding-top: 5.7rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: var(--gray-3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.wrapper {
+    padding: 2rem;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+/* ============= FORMULÁRIOS ========= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+input {
+    padding: 1.2rem 2.4rem;
+    background-color: var(--gray-3);
+    border: 1px solid #323238;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+form button {
+    background-image: var(--gradient);
+    border: none;
+    padding: 1.2rem 2.4rem;
+    border-radius: .4rem;
+    color: var(--gray-4);
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ============= MENU ========= */
+
+nav {
+    background-color: var(--gray-3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.6rem;
+}
+
+nav .menu a {
+    color: #fff;
+    transition: 200ms;
+}
+
+nav .menu a:hover {
+    color: var(--primary-color);
+}
